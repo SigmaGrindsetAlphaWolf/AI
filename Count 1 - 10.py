@@ -4,5 +4,5 @@
 # Resource: https://youtu.be/jRAAaDll34Q?si=SZq8WSYzjrmuAoIA
 
 # Loop from 1 to 10 and print each number
-for i in range(1, 11):
-    print(i)
+for count in range(5, 21):
+    print(count)
