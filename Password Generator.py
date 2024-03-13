@@ -4,6 +4,7 @@
 # Resource: https://youtu.be/jRAAaDll34Q?si=SZq8WSYzjrmuAoIA
 
 import hashlib
+import getpass
 
 def hash_password(password, salt):
     # Combine password and salt
@@ -13,8 +14,8 @@ def hash_password(password, salt):
     return hashed_password
 
 def main():
-    # Get password from user
-    password = input("Enter your password: ")
+    # Get password from user without showing characters
+    password = getpass.getpass("Enter your password: ")
 
     # Generate a random salt (You might want to implement a better salt generation mechanism)
     salt = "random_salt"
